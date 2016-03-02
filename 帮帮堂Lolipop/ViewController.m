@@ -32,22 +32,24 @@
     _pageTitles = @[@"轻轻的，改变你的生活。", @"取快递，打水，无所不能。",@"欢迎来到新的世界！"];
     _pageImages = @[@"1.jpg", @"2.jpg", @"3.jpg"];
     
+    // 初始化一个pageViewController
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
     self.pageViewController.delegate = self;
     
+    // 初始第一个页面
     PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     
     self.pageController.numberOfPages = [self.pageImages count];
     
-    [self addChildViewController:_pageViewController];
-    [self.view addSubview:_pageViewController.view];
-    [self.view bringSubviewToFront:self.pageController];
-    [self.pageViewController didMoveToParentViewController:self];
+
+    [self.view addSubview:self.pageViewController.view];
+   
+//    [self.pageViewController didMoveToParentViewController:self];
 }
 
 
@@ -103,7 +105,6 @@
     PageContentViewController *pageContentViewController= (PageContentViewController *)[self.pageViewController.viewControllers lastObject] ;
     self.pageController.currentPage = [pageContentViewController pageIndex];
 }
-
 
 
 

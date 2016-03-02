@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AVOSCloud.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [AVOSCloud setApplicationId:@"iO4PV5p1J0A1l2YVxVGlfe4z-gzGzoHsz"
+                      clientKey:@"rdkWzdgk3GpEWLl626MRTITC"];
+    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     UIPageControl *pageController = [UIPageControl appearance];
     pageController.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageController.currentPageIndicatorTintColor = [UIColor whiteColor];

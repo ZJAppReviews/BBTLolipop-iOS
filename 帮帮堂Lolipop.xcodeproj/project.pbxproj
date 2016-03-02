@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6297A6A7A2B8E6DDB90FA12F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC07AF949C20148725CBD487 /* libPods.a */; };
+		D65794841C85CBA700942FC8 /* BBTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65794831C85CBA700942FC8 /* BBTNavigationController.m */; };
+		D657948A1C85E01000942FC8 /* BBTSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65794891C85E01000942FC8 /* BBTSignUpViewController.m */; };
+		D657948D1C867A5C00942FC8 /* BBTSchoolListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */; };
 		D6E6C9141C85371300A2F398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C9131C85371300A2F398 /* main.m */; };
 		D6E6C9171C85371300A2F398 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C9161C85371300A2F398 /* AppDelegate.m */; };
 		D6E6C91A1C85371300A2F398 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C9191C85371300A2F398 /* ViewController.m */; };
@@ -18,6 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74492712AFD046653735EAF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A19D1A329654FDAB5C639882 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CC07AF949C20148725CBD487 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65794821C85CBA700942FC8 /* BBTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTNavigationController.h; sourceTree = "<group>"; };
+		D65794831C85CBA700942FC8 /* BBTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTNavigationController.m; sourceTree = "<group>"; };
+		D65794881C85E01000942FC8 /* BBTSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTSignUpViewController.h; sourceTree = "<group>"; };
+		D65794891C85E01000942FC8 /* BBTSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTSignUpViewController.m; sourceTree = "<group>"; };
+		D657948B1C867A5C00942FC8 /* BBTSchoolListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTSchoolListViewController.h; sourceTree = "<group>"; };
+		D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTSchoolListViewController.m; sourceTree = "<group>"; };
 		D6E6C90F1C85371300A2F398 /* 帮帮堂Lolipop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "帮帮堂Lolipop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E6C9131C85371300A2F398 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6E6C9151C85371300A2F398 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6297A6A7A2B8E6DDB90FA12F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DCE038948C675E7668F7FBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC07AF949C20148725CBD487 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC082D05C2CB295C73DD285C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74492712AFD046653735EAF0 /* Pods.debug.xcconfig */,
+				A19D1A329654FDAB5C639882 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D6E6C9061C85371300A2F398 = {
 			isa = PBXGroup;
 			children = (
 				D6E6C9111C85371300A2F398 /* 帮帮堂Lolipop */,
 				D6E6C9101C85371300A2F398 /* Products */,
+				CC082D05C2CB295C73DD285C /* Pods */,
+				5DCE038948C675E7668F7FBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,12 +102,18 @@
 				D6E6C9191C85371300A2F398 /* ViewController.m */,
 				D6E6C91B1C85371300A2F398 /* Main.storyboard */,
 				D6E6C92B1C85565500A2F398 /* Login.storyboard */,
+				D657948B1C867A5C00942FC8 /* BBTSchoolListViewController.h */,
+				D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */,
+				D65794881C85E01000942FC8 /* BBTSignUpViewController.h */,
+				D65794891C85E01000942FC8 /* BBTSignUpViewController.m */,
 				D6E6C92D1C85594E00A2F398 /* PageContentViewController.h */,
 				D6E6C92E1C85594E00A2F398 /* PageContentViewController.m */,
 				D6E6C91E1C85371300A2F398 /* Assets.xcassets */,
 				D6E6C9201C85371300A2F398 /* LaunchScreen.storyboard */,
 				D6E6C9231C85371300A2F398 /* Info.plist */,
 				D6E6C9121C85371300A2F398 /* Supporting Files */,
+				D65794821C85CBA700942FC8 /* BBTNavigationController.h */,
+				D65794831C85CBA700942FC8 /* BBTNavigationController.m */,
 			);
 			path = "帮帮堂Lolipop";
 			sourceTree = "<group>";
@@ -94,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6E6C9261C85371300A2F398 /* Build configuration list for PBXNativeTarget "帮帮堂Lolipop" */;
 			buildPhases = (
+				27C43EF1188E75259EB3B16E /* Check Pods Manifest.lock */,
 				D6E6C90B1C85371300A2F398 /* Sources */,
 				D6E6C90C1C85371300A2F398 /* Frameworks */,
 				D6E6C90D1C85371300A2F398 /* Resources */,
+				ECD6794CD5AD1AD0022031EC /* Embed Pods Frameworks */,
+				6204F54603DAC0BA66CBEB9A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -113,6 +155,7 @@
 		D6E6C9071C85371300A2F398 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BBT;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Donyaw;
 				TargetAttributes = {
@@ -154,6 +197,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27C43EF1188E75259EB3B16E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6204F54603DAC0BA66CBEB9A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECD6794CD5AD1AD0022031EC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6E6C90B1C85371300A2F398 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -162,7 +253,10 @@
 				D6E6C91A1C85371300A2F398 /* ViewController.m in Sources */,
 				D6E6C92F1C85594E00A2F398 /* PageContentViewController.m in Sources */,
 				D6E6C9171C85371300A2F398 /* AppDelegate.m in Sources */,
+				D657948A1C85E01000942FC8 /* BBTSignUpViewController.m in Sources */,
+				D657948D1C867A5C00942FC8 /* BBTSchoolListViewController.m in Sources */,
 				D6E6C9141C85371300A2F398 /* main.m in Sources */,
+				D65794841C85CBA700942FC8 /* BBTNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +364,7 @@
 		};
 		D6E6C9271C85371300A2F398 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74492712AFD046653735EAF0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "帮帮堂Lolipop/Info.plist";
@@ -281,6 +376,7 @@
 		};
 		D6E6C9281C85371300A2F398 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A19D1A329654FDAB5C639882 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "帮帮堂Lolipop/Info.plist";
@@ -309,6 +405,7 @@
 				D6E6C9281C85371300A2F398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
