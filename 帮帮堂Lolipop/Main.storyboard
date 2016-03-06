@@ -991,6 +991,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-xR-sI8">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9v-rT-Ol9">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
@@ -1016,36 +1019,42 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lolipop" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-xR-sI8">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="80" y="231" width="240" height="128"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gA9-xR-sI8" firstAttribute="leading" secondItem="8qT-OJ-kyB" secondAttribute="leadingMargin" constant="-20" id="Cy1-tl-xTK"/>
+                            <constraint firstItem="gA9-xR-sI8" firstAttribute="top" secondItem="8qT-OJ-kyB" secondAttribute="topMargin" id="Opi-lB-U9d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gA9-xR-sI8" secondAttribute="trailing" constant="-20" id="Wvi-g6-x7K"/>
                             <constraint firstItem="O9v-rT-Ol9" firstAttribute="trailing" secondItem="8qT-OJ-kyB" secondAttribute="trailingMargin" id="cbX-6u-mea"/>
                             <constraint firstItem="icu-qS-Qhk" firstAttribute="top" secondItem="O9v-rT-Ol9" secondAttribute="bottom" constant="20" id="j8B-CM-DAx"/>
+                            <constraint firstItem="icu-qS-Qhk" firstAttribute="top" secondItem="gA9-xR-sI8" secondAttribute="bottom" id="twZ-Hm-CGA"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="O9v-rT-Ol9"/>
                                 <exclude reference="gA9-xR-sI8"/>
+                                <exclude reference="O9v-rT-Ol9"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="j8B-CM-DAx"/>
+                                <exclude reference="Cy1-tl-xTK"/>
+                                <exclude reference="Opi-lB-U9d"/>
+                                <exclude reference="Wvi-g6-x7K"/>
                                 <exclude reference="cbX-6u-mea"/>
+                                <exclude reference="j8B-CM-DAx"/>
+                                <exclude reference="twZ-Hm-CGA"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="O9v-rT-Ol9"/>
                                 <include reference="gA9-xR-sI8"/>
+                                <include reference="O9v-rT-Ol9"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="j8B-CM-DAx"/>
+                                <include reference="Cy1-tl-xTK"/>
+                                <include reference="Opi-lB-U9d"/>
+                                <include reference="Wvi-g6-x7K"/>
                                 <include reference="cbX-6u-mea"/>
+                                <include reference="j8B-CM-DAx"/>
+                                <include reference="twZ-Hm-CGA"/>
                             </mask>
                         </variation>
                     </view>
@@ -1414,8 +1423,8 @@
         <image name="ic_call_received_white" width="24" height="24"/>
         <image name="ic_person_white" width="24" height="24"/>
         <image name="ic_settings_white" width="24" height="24"/>
-        <image name="lolipop" width="146" height="44"/>
         <image name="mainlogo" width="277" height="277"/>
         <image name="seat" width="384" height="120"/>
+        <image name="tip" width="414" height="736"/>
     </resources>
 </document>
