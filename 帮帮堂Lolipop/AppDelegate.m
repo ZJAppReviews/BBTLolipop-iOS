@@ -20,11 +20,22 @@
     [AVOSCloud setApplicationId:@"iO4PV5p1J0A1l2YVxVGlfe4z-gzGzoHsz"
                       clientKey:@"rdkWzdgk3GpEWLl626MRTITC"];
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
     UIPageControl *pageController = [UIPageControl appearance];
     pageController.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageController.currentPageIndicatorTintColor = [UIColor whiteColor];
     pageController.backgroundColor = [UIColor clearColor];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    if ([AVUser currentUser]) {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window.rootViewController = [mainStoryboard instantiateInitialViewController];
+    } else {
+        UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+        
+        self.window.rootViewController = [loginStoryboard instantiateInitialViewController];
+        
+    }
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
