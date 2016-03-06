@@ -11,14 +11,24 @@
 		D65794841C85CBA700942FC8 /* BBTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65794831C85CBA700942FC8 /* BBTNavigationController.m */; };
 		D657948A1C85E01000942FC8 /* BBTSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65794891C85E01000942FC8 /* BBTSignUpViewController.m */; };
 		D657948D1C867A5C00942FC8 /* BBTSchoolListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */; };
+		D6E1A8D51C894D1500D753AA /* BBTTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8D41C894D1500D753AA /* BBTTaskViewController.m */; };
+		D6E1A8D81C894E6200D753AA /* BBTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8D71C894E6200D753AA /* BBTMainViewController.m */; };
+		D6E1A8DB1C89522F00D753AA /* BBTTaskViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8DA1C89522F00D753AA /* BBTTaskViewCell.m */; };
+		D6E1A8DE1C896B1700D753AA /* BBTPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8DD1C896B1700D753AA /* BBTPostViewController.m */; };
+		D6E1A8E21C89BC8300D753AA /* BBTTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8E11C89BC8300D753AA /* BBTTask.m */; };
+		D6E1A8E71C8A7EA400D753AA /* BBTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8E61C8A7EA400D753AA /* BBTDetailViewController.m */; };
+		D6E1A8E91C8AC86800D753AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E1A8E81C8AC86800D753AA /* Assets.xcassets */; };
+		D6E1A8EC1C8AF3DA00D753AA /* BBTMyPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8EB1C8AF3DA00D753AA /* BBTMyPostViewController.m */; };
+		D6E1A8EF1C8AFA8E00D753AA /* BBTMyTakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8EE1C8AFA8E00D753AA /* BBTMyTakeViewController.m */; };
+		D6E1A8F51C8B307F00D753AA /* BBTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8F41C8B307F00D753AA /* BBTMineViewController.m */; };
 		D6E6C9141C85371300A2F398 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C9131C85371300A2F398 /* main.m */; };
 		D6E6C9171C85371300A2F398 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C9161C85371300A2F398 /* AppDelegate.m */; };
 		D6E6C91A1C85371300A2F398 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C9191C85371300A2F398 /* ViewController.m */; };
-		D6E6C91D1C85371300A2F398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E6C91B1C85371300A2F398 /* Main.storyboard */; };
-		D6E6C91F1C85371300A2F398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E6C91E1C85371300A2F398 /* Assets.xcassets */; };
 		D6E6C9221C85371300A2F398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E6C9201C85371300A2F398 /* LaunchScreen.storyboard */; };
 		D6E6C92C1C85565500A2F398 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E6C92B1C85565500A2F398 /* Login.storyboard */; };
 		D6E6C92F1C85594E00A2F398 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C92E1C85594E00A2F398 /* PageContentViewController.m */; };
+		D6F584101C880F3100AF9E96 /* BBTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F5840F1C880F3100AF9E96 /* BBTLoginViewController.m */; };
+		D6F584121C88336B00AF9E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F584111C88336B00AF9E96 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,19 +41,39 @@
 		D65794891C85E01000942FC8 /* BBTSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTSignUpViewController.m; sourceTree = "<group>"; };
 		D657948B1C867A5C00942FC8 /* BBTSchoolListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTSchoolListViewController.h; sourceTree = "<group>"; };
 		D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTSchoolListViewController.m; sourceTree = "<group>"; };
+		D6E1A8D31C894D1500D753AA /* BBTTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTTaskViewController.h; sourceTree = "<group>"; };
+		D6E1A8D41C894D1500D753AA /* BBTTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTTaskViewController.m; sourceTree = "<group>"; };
+		D6E1A8D61C894E6200D753AA /* BBTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTMainViewController.h; sourceTree = "<group>"; };
+		D6E1A8D71C894E6200D753AA /* BBTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTMainViewController.m; sourceTree = "<group>"; };
+		D6E1A8D91C89522F00D753AA /* BBTTaskViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTTaskViewCell.h; sourceTree = "<group>"; };
+		D6E1A8DA1C89522F00D753AA /* BBTTaskViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTTaskViewCell.m; sourceTree = "<group>"; };
+		D6E1A8DC1C896B1700D753AA /* BBTPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTPostViewController.h; sourceTree = "<group>"; };
+		D6E1A8DD1C896B1700D753AA /* BBTPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTPostViewController.m; sourceTree = "<group>"; };
+		D6E1A8E01C89BC8300D753AA /* BBTTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTTask.h; sourceTree = "<group>"; };
+		D6E1A8E11C89BC8300D753AA /* BBTTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTTask.m; sourceTree = "<group>"; };
+		D6E1A8E51C8A7EA400D753AA /* BBTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTDetailViewController.h; sourceTree = "<group>"; };
+		D6E1A8E61C8A7EA400D753AA /* BBTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTDetailViewController.m; sourceTree = "<group>"; };
+		D6E1A8E81C8AC86800D753AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6E1A8EA1C8AF3DA00D753AA /* BBTMyPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTMyPostViewController.h; sourceTree = "<group>"; };
+		D6E1A8EB1C8AF3DA00D753AA /* BBTMyPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTMyPostViewController.m; sourceTree = "<group>"; };
+		D6E1A8ED1C8AFA8E00D753AA /* BBTMyTakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTMyTakeViewController.h; sourceTree = "<group>"; };
+		D6E1A8EE1C8AFA8E00D753AA /* BBTMyTakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTMyTakeViewController.m; sourceTree = "<group>"; };
+		D6E1A8F31C8B307F00D753AA /* BBTMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTMineViewController.h; sourceTree = "<group>"; };
+		D6E1A8F41C8B307F00D753AA /* BBTMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTMineViewController.m; sourceTree = "<group>"; };
 		D6E6C90F1C85371300A2F398 /* 帮帮堂Lolipop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "帮帮堂Lolipop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E6C9131C85371300A2F398 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6E6C9151C85371300A2F398 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D6E6C9161C85371300A2F398 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D6E6C9181C85371300A2F398 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D6E6C9191C85371300A2F398 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D6E6C91C1C85371300A2F398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D6E6C91E1C85371300A2F398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6E6C9211C85371300A2F398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6E6C9231C85371300A2F398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6E6C92B1C85565500A2F398 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = ../Login.storyboard; sourceTree = "<group>"; };
 		D6E6C92D1C85594E00A2F398 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		D6E6C92E1C85594E00A2F398 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		D6F5840E1C880F3100AF9E96 /* BBTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTLoginViewController.h; sourceTree = "<group>"; };
+		D6F5840F1C880F3100AF9E96 /* BBTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTLoginViewController.m; sourceTree = "<group>"; };
+		D6F584111C88336B00AF9E96 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +105,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D691DD7E1C8BD02E009B0DAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6F584111C88336B00AF9E96 /* Main.storyboard */,
+				D6E6C92B1C85565500A2F398 /* Login.storyboard */,
+				D6E6C9201C85371300A2F398 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D6E1A8DF1C8998E600D753AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6E1A8E01C89BC8300D753AA /* BBTTask.h */,
+				D6E1A8E11C89BC8300D753AA /* BBTTask.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		D6E6C9061C85371300A2F398 = {
 			isa = PBXGroup;
 			children = (
@@ -96,24 +145,14 @@
 		D6E6C9111C85371300A2F398 /* 帮帮堂Lolipop */ = {
 			isa = PBXGroup;
 			children = (
+				D691DD7E1C8BD02E009B0DAA /* View */,
+				D6E1A8DF1C8998E600D753AA /* Model */,
+				D6F5840D1C880EE400AF9E96 /* Controller */,
 				D6E6C9151C85371300A2F398 /* AppDelegate.h */,
 				D6E6C9161C85371300A2F398 /* AppDelegate.m */,
-				D6E6C9181C85371300A2F398 /* ViewController.h */,
-				D6E6C9191C85371300A2F398 /* ViewController.m */,
-				D6E6C91B1C85371300A2F398 /* Main.storyboard */,
-				D6E6C92B1C85565500A2F398 /* Login.storyboard */,
-				D657948B1C867A5C00942FC8 /* BBTSchoolListViewController.h */,
-				D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */,
-				D65794881C85E01000942FC8 /* BBTSignUpViewController.h */,
-				D65794891C85E01000942FC8 /* BBTSignUpViewController.m */,
-				D6E6C92D1C85594E00A2F398 /* PageContentViewController.h */,
-				D6E6C92E1C85594E00A2F398 /* PageContentViewController.m */,
-				D6E6C91E1C85371300A2F398 /* Assets.xcassets */,
-				D6E6C9201C85371300A2F398 /* LaunchScreen.storyboard */,
+				D6E1A8E81C8AC86800D753AA /* Assets.xcassets */,
 				D6E6C9231C85371300A2F398 /* Info.plist */,
 				D6E6C9121C85371300A2F398 /* Supporting Files */,
-				D65794821C85CBA700942FC8 /* BBTNavigationController.h */,
-				D65794831C85CBA700942FC8 /* BBTNavigationController.m */,
 			);
 			path = "帮帮堂Lolipop";
 			sourceTree = "<group>";
@@ -124,6 +163,41 @@
 				D6E6C9131C85371300A2F398 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6F5840D1C880EE400AF9E96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D65794821C85CBA700942FC8 /* BBTNavigationController.h */,
+				D65794831C85CBA700942FC8 /* BBTNavigationController.m */,
+				D657948B1C867A5C00942FC8 /* BBTSchoolListViewController.h */,
+				D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */,
+				D65794881C85E01000942FC8 /* BBTSignUpViewController.h */,
+				D65794891C85E01000942FC8 /* BBTSignUpViewController.m */,
+				D6E6C92D1C85594E00A2F398 /* PageContentViewController.h */,
+				D6E6C92E1C85594E00A2F398 /* PageContentViewController.m */,
+				D6F5840E1C880F3100AF9E96 /* BBTLoginViewController.h */,
+				D6F5840F1C880F3100AF9E96 /* BBTLoginViewController.m */,
+				D6E1A8D91C89522F00D753AA /* BBTTaskViewCell.h */,
+				D6E1A8DA1C89522F00D753AA /* BBTTaskViewCell.m */,
+				D6E1A8D31C894D1500D753AA /* BBTTaskViewController.h */,
+				D6E1A8D41C894D1500D753AA /* BBTTaskViewController.m */,
+				D6E1A8D61C894E6200D753AA /* BBTMainViewController.h */,
+				D6E1A8D71C894E6200D753AA /* BBTMainViewController.m */,
+				D6E1A8DC1C896B1700D753AA /* BBTPostViewController.h */,
+				D6E1A8DD1C896B1700D753AA /* BBTPostViewController.m */,
+				D6E1A8EA1C8AF3DA00D753AA /* BBTMyPostViewController.h */,
+				D6E1A8EB1C8AF3DA00D753AA /* BBTMyPostViewController.m */,
+				D6E1A8ED1C8AFA8E00D753AA /* BBTMyTakeViewController.h */,
+				D6E1A8EE1C8AFA8E00D753AA /* BBTMyTakeViewController.m */,
+				D6E1A8E51C8A7EA400D753AA /* BBTDetailViewController.h */,
+				D6E1A8E61C8A7EA400D753AA /* BBTDetailViewController.m */,
+				D6E1A8F31C8B307F00D753AA /* BBTMineViewController.h */,
+				D6E1A8F41C8B307F00D753AA /* BBTMineViewController.m */,
+				D6E6C9181C85371300A2F398 /* ViewController.h */,
+				D6E6C9191C85371300A2F398 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,10 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E1A8E91C8AC86800D753AA /* Assets.xcassets in Resources */,
 				D6E6C92C1C85565500A2F398 /* Login.storyboard in Resources */,
 				D6E6C9221C85371300A2F398 /* LaunchScreen.storyboard in Resources */,
-				D6E6C91F1C85371300A2F398 /* Assets.xcassets in Resources */,
-				D6E6C91D1C85371300A2F398 /* Main.storyboard in Resources */,
+				D6F584121C88336B00AF9E96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,27 +324,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E1A8D51C894D1500D753AA /* BBTTaskViewController.m in Sources */,
 				D6E6C91A1C85371300A2F398 /* ViewController.m in Sources */,
+				D6E1A8F51C8B307F00D753AA /* BBTMineViewController.m in Sources */,
+				D6E1A8EC1C8AF3DA00D753AA /* BBTMyPostViewController.m in Sources */,
 				D6E6C92F1C85594E00A2F398 /* PageContentViewController.m in Sources */,
 				D6E6C9171C85371300A2F398 /* AppDelegate.m in Sources */,
+				D6F584101C880F3100AF9E96 /* BBTLoginViewController.m in Sources */,
+				D6E1A8EF1C8AFA8E00D753AA /* BBTMyTakeViewController.m in Sources */,
 				D657948A1C85E01000942FC8 /* BBTSignUpViewController.m in Sources */,
+				D6E1A8DB1C89522F00D753AA /* BBTTaskViewCell.m in Sources */,
 				D657948D1C867A5C00942FC8 /* BBTSchoolListViewController.m in Sources */,
+				D6E1A8E71C8A7EA400D753AA /* BBTDetailViewController.m in Sources */,
 				D6E6C9141C85371300A2F398 /* main.m in Sources */,
+				D6E1A8D81C894E6200D753AA /* BBTMainViewController.m in Sources */,
+				D6E1A8E21C89BC8300D753AA /* BBTTask.m in Sources */,
 				D65794841C85CBA700942FC8 /* BBTNavigationController.m in Sources */,
+				D6E1A8DE1C896B1700D753AA /* BBTPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D6E6C91B1C85371300A2F398 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D6E6C91C1C85371300A2F398 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D6E6C9201C85371300A2F398 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

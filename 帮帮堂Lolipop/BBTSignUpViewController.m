@@ -14,16 +14,13 @@
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumberTextField;
 @property (weak, nonatomic) IBOutlet UITextField *codeTextField;
 @property (weak, nonatomic) IBOutlet UIButton *getCodeButton;
-@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *signUpButton;
+@property (weak, nonatomic) IBOutlet UIButton *schoolButton;
 @property (nonatomic, strong) NSTimer *timer;
+@property (weak, nonatomic) IBOutlet UITextField *passwordtextField;
 @property NSInteger countDown;
 - (IBAction)getCodeClick:(id)sender;
 - (IBAction)signUpClick:(id)sender;
-
-
-
-@property (weak, nonatomic) IBOutlet UIButton *schoolButton;
-
 
 @end
 
@@ -32,6 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.signUpButton.enabled = NO;
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillShow) name:UIKeyboardWillChangeFrameNotification object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillHide) name:UIKeyboardWillHideNotification object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(setSchoolName:) name:@"setSchoolNameNotification" object:nil];
@@ -77,8 +75,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.phoneNumberTextField resignFirstResponder];
     [self.codeTextField resignFirstResponder];
-    
-
+    [self.passwordtextField resignFirstResponder];
 }
 
 #pragma mark - 设置学校
@@ -90,14 +87,11 @@
 #pragma mark - 键盘的出现和消失
 - (void)keyboardWillShow {
     self.schoolButton.hidden = YES;
-
     self.view.frame = CGRectMake(0, -154, self.view.frame.size.width, self.view.frame.size.height);
 
 }
 
 - (void)keyboardWillHide {
-    
-    
     self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     self.schoolButton.hidden = NO;
 }
@@ -154,19 +148,30 @@
 
 #pragma mark - 注册
 - (IBAction)signUpClick:(id)sender {
-    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:self.phoneNumberTextField.text smsCode:self.codeTextField.text block:^(AVUser *user, NSError *error) {
-        if (!error) {
+    [AVOSCloud verifySmsCode:self.codeTextField.text mobilePhoneNumber:self.phoneNumberTextField.text callback:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            AVUser *user = [AVUser user];
+            user.username = self.phoneNumberTextField.text;
+            user.password = self.passwordtextField.text;
+            user.mobilePhoneNumber = self.phoneNumberTextField.text;
             [user setObject:self.schoolButton.titleLabel.text forKey:@"schoolName"];
-            [user saveInBackground];
-        } else {
-            NSString *errorMessage = [error.userInfo objectForKey:@"error"];
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"登录失败" message:errorMessage preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleCancel handler:nil];
-            [alertController addAction:confirmAction];
-            [self presentViewController:alertController animated:YES completion:nil];
+            [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                    self.view.window.rootViewController = [mainStoryboard instantiateInitialViewController];
+                } else {
+                    NSString *errorMessage = [error.userInfo objectForKey:@"error"];
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"注册失败" message:errorMessage preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleCancel handler:nil];
+                    [alertController addAction:confirmAction];
+                    [self presentViewController:alertController animated:YES completion:nil];
+                }
+            }];
         }
-        
     }];
+
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

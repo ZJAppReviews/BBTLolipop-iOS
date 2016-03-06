@@ -29,8 +29,8 @@
     
     self.loginButton.backgroundColor = [UIColor colorWithRed:158 / 255.0 green:158 / 255.0 blue:158 / 255.0 alpha:68 / 255.0];
 
-    _pageTitles = @[@"轻轻的，改变你的生活。", @"取快递，打水，无所不能。",@"欢迎来到新的世界！"];
-    _pageImages = @[@"1.jpg", @"2.jpg", @"3.jpg"];
+    self.pageTitles = @[@"轻轻的，改变你的生活。", @"取快递，打水，无所不能。",@"欢迎来到新的世界！"];
+    self.pageImages = @[@"1.jpg", @"2.jpg", @"3.jpg"];
     
     // 初始化一个pageViewController
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
