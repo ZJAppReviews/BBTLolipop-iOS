@@ -17,9 +17,6 @@
 @end
 
 @implementation BBTMineViewController
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.phoneNumberLabel.text = [[AVUser currentUser] username];

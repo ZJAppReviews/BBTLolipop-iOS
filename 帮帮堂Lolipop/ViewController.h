@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
-
-
 @property (weak, nonatomic) IBOutlet UIPageControl *pageController;
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 @property (nonatomic, strong) NSArray *pageTitles;

@@ -11,6 +11,7 @@
 		D65794841C85CBA700942FC8 /* BBTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65794831C85CBA700942FC8 /* BBTNavigationController.m */; };
 		D657948A1C85E01000942FC8 /* BBTSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65794891C85E01000942FC8 /* BBTSignUpViewController.m */; };
 		D657948D1C867A5C00942FC8 /* BBTSchoolListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */; };
+		D6683F4A1C8ECD520059BAF2 /* BBTDetailTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6683F491C8ECD520059BAF2 /* BBTDetailTableController.m */; };
 		D6E1A8D51C894D1500D753AA /* BBTTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8D41C894D1500D753AA /* BBTTaskViewController.m */; };
 		D6E1A8D81C894E6200D753AA /* BBTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8D71C894E6200D753AA /* BBTMainViewController.m */; };
 		D6E1A8DB1C89522F00D753AA /* BBTTaskViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1A8DA1C89522F00D753AA /* BBTTaskViewCell.m */; };
@@ -41,6 +42,8 @@
 		D65794891C85E01000942FC8 /* BBTSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTSignUpViewController.m; sourceTree = "<group>"; };
 		D657948B1C867A5C00942FC8 /* BBTSchoolListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTSchoolListViewController.h; sourceTree = "<group>"; };
 		D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTSchoolListViewController.m; sourceTree = "<group>"; };
+		D6683F481C8ECD520059BAF2 /* BBTDetailTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTDetailTableController.h; sourceTree = "<group>"; };
+		D6683F491C8ECD520059BAF2 /* BBTDetailTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTDetailTableController.m; sourceTree = "<group>"; };
 		D6E1A8D31C894D1500D753AA /* BBTTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTTaskViewController.h; sourceTree = "<group>"; };
 		D6E1A8D41C894D1500D753AA /* BBTTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTTaskViewController.m; sourceTree = "<group>"; };
 		D6E1A8D61C894E6200D753AA /* BBTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTMainViewController.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 		D6F5840D1C880EE400AF9E96 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D6683F481C8ECD520059BAF2 /* BBTDetailTableController.h */,
+				D6683F491C8ECD520059BAF2 /* BBTDetailTableController.m */,
 				D65794821C85CBA700942FC8 /* BBTNavigationController.h */,
 				D65794831C85CBA700942FC8 /* BBTNavigationController.m */,
 				D657948B1C867A5C00942FC8 /* BBTSchoolListViewController.h */,
@@ -328,6 +333,7 @@
 				D6E6C91A1C85371300A2F398 /* ViewController.m in Sources */,
 				D6E1A8F51C8B307F00D753AA /* BBTMineViewController.m in Sources */,
 				D6E1A8EC1C8AF3DA00D753AA /* BBTMyPostViewController.m in Sources */,
+				D6683F4A1C8ECD520059BAF2 /* BBTDetailTableController.m in Sources */,
 				D6E6C92F1C85594E00A2F398 /* PageContentViewController.m in Sources */,
 				D6E6C9171C85371300A2F398 /* AppDelegate.m in Sources */,
 				D6F584101C880F3100AF9E96 /* BBTLoginViewController.m in Sources */,

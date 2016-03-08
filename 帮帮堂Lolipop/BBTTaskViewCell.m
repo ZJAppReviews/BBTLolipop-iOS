@@ -14,9 +14,6 @@
 
 @implementation BBTTaskViewCell
 
-
-
-
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
@@ -25,9 +22,7 @@
 
 // 取消表格选中的效果
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-//    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
 }
 
 -(void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated

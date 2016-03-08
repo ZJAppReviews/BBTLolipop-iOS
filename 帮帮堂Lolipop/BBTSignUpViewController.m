@@ -37,6 +37,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkInformation) name:UITextFieldTextDidChangeNotification object:self.codeTextField];
     self.schoolButton.layer.cornerRadius = 5;
     self.signupInfoView.layer.cornerRadius = 5;
+    self.getCodeButton.layer.cornerRadius = 5;
     
 }
 
@@ -96,19 +97,6 @@
     self.schoolButton.hidden = NO;
 }
 
-
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 #pragma mark - 获取验证码
 - (IBAction)getCodeClick:(id)sender {
    [AVOSCloud requestSmsCodeWithPhoneNumber:self.phoneNumberTextField.text callback:^(BOOL succeeded, NSError *error) {
