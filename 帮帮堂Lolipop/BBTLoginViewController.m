@@ -78,7 +78,6 @@
 }
 
 
-
 - (IBAction)loginClick:(id)sender {
     [AVUser logInWithUsernameInBackground:self.usernameTextField.text password:self.passwordField.text block:^(AVUser *user, NSError *error) {
         if (user) {

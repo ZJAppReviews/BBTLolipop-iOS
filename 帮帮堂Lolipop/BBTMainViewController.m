@@ -40,7 +40,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
     self.taskViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TaskViewController"];
     [self addChildViewController:self.taskViewController];
     [self.view addSubview:self.taskViewController.tableView];

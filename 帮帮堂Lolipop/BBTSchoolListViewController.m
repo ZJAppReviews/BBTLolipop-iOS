@@ -106,4 +106,5 @@
 
 -(void)dealloc {
     [self.resultSearchController.view removeFromSuperview];
-}@end
+}
+@end
