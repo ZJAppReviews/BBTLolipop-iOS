@@ -6,13 +6,13 @@
 //  Copyright © 2016年 Donyaw. All rights reserved.
 //
 
-#import "PageContentViewController.h"
+#import "BBTPageContentViewController.h"
 
-@interface PageContentViewController ()
+@interface BBTPageContentViewController ()
 
 @end
 
-@implementation PageContentViewController
+@implementation BBTPageContentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

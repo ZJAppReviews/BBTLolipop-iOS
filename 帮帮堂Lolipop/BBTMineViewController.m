@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *schoolNameLabel;
+- (IBAction)changeAvatar:(UITapGestureRecognizer *)sender;
 @end
 
 @implementation BBTMineViewController
@@ -46,4 +47,7 @@
 
 
 
+- (IBAction)changeAvatar:(UITapGestureRecognizer *)sender {
+    
+}
 @end

@@ -22,12 +22,12 @@ typedef enum{
 @property (nonatomic, copy) NSString *detail;
 @property (nonatomic, copy) NSString *taskSender;
 @property (nonatomic, copy) NSString *taskReceiver;
-@property (nonatomic,assign) TaskState taskState;
+@property (nonatomic) TaskState taskState;
 @property (nonatomic, copy) NSString *taskType;
-@property (nonatomic) NSNumber *money;
+@property (nonatomic, strong) NSNumber *money;
 @property (nonatomic, copy) NSString *schoolName;
-@property (nonatomic) NSDate *createdAt;
-@property (nonatomic) NSDate *updatedAt;
+@property (nonatomic, strong) NSDate *createdAt;
+@property (nonatomic, strong) NSDate *updatedAt;
 @property (nonatomic, copy) NSString *objectId;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dic;
