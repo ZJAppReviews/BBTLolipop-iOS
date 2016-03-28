@@ -27,7 +27,7 @@
 		D6E6C91A1C85371300A2F398 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C9191C85371300A2F398 /* ViewController.m */; };
 		D6E6C9221C85371300A2F398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E6C9201C85371300A2F398 /* LaunchScreen.storyboard */; };
 		D6E6C92C1C85565500A2F398 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E6C92B1C85565500A2F398 /* Login.storyboard */; };
-		D6E6C92F1C85594E00A2F398 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C92E1C85594E00A2F398 /* PageContentViewController.m */; };
+		D6E6C92F1C85594E00A2F398 /* BBTPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E6C92E1C85594E00A2F398 /* BBTPageContentViewController.m */; };
 		D6F584101C880F3100AF9E96 /* BBTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F5840F1C880F3100AF9E96 /* BBTLoginViewController.m */; };
 		D6F584121C88336B00AF9E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F584111C88336B00AF9E96 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -72,8 +72,8 @@
 		D6E6C9211C85371300A2F398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6E6C9231C85371300A2F398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6E6C92B1C85565500A2F398 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = ../Login.storyboard; sourceTree = "<group>"; };
-		D6E6C92D1C85594E00A2F398 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
-		D6E6C92E1C85594E00A2F398 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		D6E6C92D1C85594E00A2F398 /* BBTPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTPageContentViewController.h; sourceTree = "<group>"; };
+		D6E6C92E1C85594E00A2F398 /* BBTPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTPageContentViewController.m; sourceTree = "<group>"; };
 		D6F5840E1C880F3100AF9E96 /* BBTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTLoginViewController.h; sourceTree = "<group>"; };
 		D6F5840F1C880F3100AF9E96 /* BBTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTLoginViewController.m; sourceTree = "<group>"; };
 		D6F584111C88336B00AF9E96 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -179,8 +179,8 @@
 				D657948C1C867A5C00942FC8 /* BBTSchoolListViewController.m */,
 				D65794881C85E01000942FC8 /* BBTSignUpViewController.h */,
 				D65794891C85E01000942FC8 /* BBTSignUpViewController.m */,
-				D6E6C92D1C85594E00A2F398 /* PageContentViewController.h */,
-				D6E6C92E1C85594E00A2F398 /* PageContentViewController.m */,
+				D6E6C92D1C85594E00A2F398 /* BBTPageContentViewController.h */,
+				D6E6C92E1C85594E00A2F398 /* BBTPageContentViewController.m */,
 				D6F5840E1C880F3100AF9E96 /* BBTLoginViewController.h */,
 				D6F5840F1C880F3100AF9E96 /* BBTLoginViewController.m */,
 				D6E1A8D91C89522F00D753AA /* BBTTaskViewCell.h */,
@@ -334,7 +334,7 @@
 				D6E1A8F51C8B307F00D753AA /* BBTMineViewController.m in Sources */,
 				D6E1A8EC1C8AF3DA00D753AA /* BBTMyPostViewController.m in Sources */,
 				D6683F4A1C8ECD520059BAF2 /* BBTDetailTableController.m in Sources */,
-				D6E6C92F1C85594E00A2F398 /* PageContentViewController.m in Sources */,
+				D6E6C92F1C85594E00A2F398 /* BBTPageContentViewController.m in Sources */,
 				D6E6C9171C85371300A2F398 /* AppDelegate.m in Sources */,
 				D6F584101C880F3100AF9E96 /* BBTLoginViewController.m in Sources */,
 				D6E1A8EF1C8AFA8E00D753AA /* BBTMyTakeViewController.m in Sources */,
@@ -449,6 +449,7 @@
 			baseConfigurationReference = 74492712AFD046653735EAF0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "帮帮堂Lolipop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.donyaw.BBTLolipop;
@@ -461,6 +462,7 @@
 			baseConfigurationReference = A19D1A329654FDAB5C639882 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "帮帮堂Lolipop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.donyaw.BBTLolipop;

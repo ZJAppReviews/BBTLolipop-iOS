@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PageContentViewController : UIViewController
+@interface BBTPageContentViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;

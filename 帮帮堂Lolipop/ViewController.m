@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "PageContentViewController.h"
+#import "BBTPageContentViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *signupButton;
@@ -33,7 +33,7 @@
     self.pageViewController.delegate = self;
     
     // 初始第一个页面
-    PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    BBTPageContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
@@ -55,7 +55,7 @@
 
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-    NSInteger index = ((PageContentViewController *)viewController).pageIndex;
+    NSInteger index = ((BBTPageContentViewController *)viewController).pageIndex;
     if (index == 0 || index == NSNotFound) {
         return nil;
     }
@@ -64,7 +64,7 @@
 }
 
 -(UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
-    NSInteger index = ((PageContentViewController *) viewController).pageIndex;
+    NSInteger index = ((BBTPageContentViewController *) viewController).pageIndex;
     if (index == NSNotFound) {
         return nil;
     }
@@ -78,11 +78,11 @@
 }
 
 
-- (PageContentViewController *)viewControllerAtIndex:(NSInteger)index {
+- (BBTPageContentViewController *)viewControllerAtIndex:(NSInteger)index {
     if (([self.pageTitles count] == 0) || (index >= [self.pageTitles count])) {
         return nil;
     }
-    PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
+    BBTPageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
 
     pageContentViewController.imageFile = self.pageImages[index];
     pageContentViewController.titleText = self.pageTitles[index];
@@ -97,7 +97,7 @@
     if (!completed) {
         return;
     }
-    PageContentViewController *pageContentViewController= (PageContentViewController *)[self.pageViewController.viewControllers lastObject] ;
+    BBTPageContentViewController *pageContentViewController= (BBTPageContentViewController *)[self.pageViewController.viewControllers lastObject] ;
     self.pageController.currentPage = [pageContentViewController pageIndex];
 }
 
